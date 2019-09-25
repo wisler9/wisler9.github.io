@@ -10,6 +10,10 @@ body {
 
 
 /* ------About Page------ */
+
+#page-content {
+    flex: 1 0 auto;
+  }
 /* ------Header------ */
 
 header {
@@ -55,6 +59,26 @@ ul {
     top: 45px;
 } */
 
+/* ------Heading------ */
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 /* ------Main------ */
 
@@ -120,6 +144,7 @@ p {
 
 /* ------Footer------ */
 
+
 footer {
     clear: left;
     background-color: #ffa500;
@@ -130,15 +155,66 @@ footer {
     font-size: .75em;
     margin-top: 100px;
     position: relative;
-} */
+} 
 
 
 
 /* ------Portfolio Page------ */
 
+/* .footer {
+    background-color: #f5f5f5;
+} */
 
 
+#sticky-footer {
+    flex-shrink: none;
+  }
+/* .mt-auto, .my-auto {
+    margin-top: auto!important;
+} */
+
+/* .pb-3, .py-3 {
+    padding-bottom: 1rem!important;
+}
+
+.pt-3, .py-3 {
+    padding-top: 1rem!important;
+} */
 
 
 
 /* ------Contact Page------ */
+
+/* ---------------------------------------------- */
+/* Form  */
+/* ---------------------------------------------- */
+
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+select {
+    height: 30px;
+}
+
+*:focus {outline: none;}
