@@ -1,44 +1,50 @@
-* {
-    box-sizing: border-box;
-}
-
-body { 
-    margin: 0px;
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
     font-family: 'Cairo', sans-serif;
     /* font-family: 'Teko', sans-serif; */
 }
 
-
-/* ------About Page------ */
-
-#page-content {
-    flex: 1 0 auto;
-  }
-/* ------Header------ */
-
-header {
-    width: 1024px;
-    margin: 0 auto;
-    background-color: #fff;
+/* This wrapper allows me to have the footer to stay at the bottom, 
+also make sure the html and body is set to 0 margin and padding, with a height of 100%*/
+#wrapper {
+    min-height: 100%;
     position: relative;
 }
 
-/* #head-t {
-    position: fixed;
-    z-index: 1;
-} */
 
-/* h1 {
-    font-family: 'Vollkorn SC', serif;
+
+
+/* ---------------------------------------------- */
+/* Header  */
+/* ---------------------------------------------- */
+
+
+#header-wrap {
+    /* background-color: red; */
+    border-bottom: 2px solid #ffa500;
+    height: 100%; 
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Vollkorn SC', serif; 
     font-size: 1.9em;
     font-weight: bold;
     color: #fff;
-    padding:40px;
-    background-color: tan;
+    padding:30px;
+    background-color: #d2b48c;
+    display: inline-block;
+    width: 320px;
     height: 100px;
-    position: absolute;
+    margin-bottom: 0;
+    float: left;
+    /* position: absolute;
+    position: relative;
     top: 0px;
-    left: 0px;
+    left: 0px; */
 }
 
 a { 
@@ -46,163 +52,100 @@ a {
     color: #ffa500;
 }
 
+nav {
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+    /* margin-top: 30px; */
+    position: relative;
+}
 
-nav li {
+li {
     display: inline;
     padding:20px;
 }
 
-ul {
-    display: inline;
-    position: absolute;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 on: absolute;
-    right: 0px;
-    top: 45px;
-} */
+ ul {
+    display: inline-block;
+    /* position: absolute; */
+    position: relative;
+    /* right: 0px; */
+    /* top: 40px; */
+    /* padding: 0; */
+} 
 
-/* ------Heading------ */
 
-h2{
-    font-size: 180%;
-    word-spacing: 2px;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
+
+
+/* ---------------------------------------------- */
+/* Portfolio Page  */
+/* ---------------------------------------------- */
+
+#main-wrap {
+    padding-bottom: 60px;
 }
 
-h2:after {
-    display: block;
-    height: 2px;
-    background-color: #e67e22;
-    content: " ";
-    width: 100px;
-    margin: 0 auto;
+section {
+    border: 1px solid #d2b48c;
+    padding: 30px;
     margin-top: 30px;
+}
+
+section img {
+    float: left;
+    /* margin-top: 30px; */
+    padding: 0 20px 0 0;
+    /* width: 100%; */
+    height: auto;
+}
+
+.port {
+    border: 1px solid #d2b48c;
+    padding: 30px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .port_img {
-    
-    margin-right: 10px;
+    display: inline-block;
 }
 
-/* ------Main------ */
-
-
-.aboutMe {
-    /* width: 100%;
-    height: 600px;
-    border-top: 2px solid #ffa500;
-    background-color: #c6c6c6;
-    position: relative;
-    top: 100px; */
-    margin-top: 50px;
-}
-
-* .aboutMePara {
-    margin-top: 50px;
-} 
-/* 
-
-
-#main {
-    width: 1024px;
-    margin: 0 auto;
-    border: 1px solid #ffa500;
-    padding: 30px;
-    background-color: #fff;
-    position: relative;
-    top: 30px;
-}
-
-#bio img {
-    float: left;
-    margin-top: 30px;
-    padding-right: 20px;
-}
-*/
-
-
-h1 {
+h2 {
     font-family: 'Vollkorn SC', serif;
     font-size: 1.7em;
     font-weight: bold;
-    color: tan;
-    padding-bottom: 20px;
-    width:500px;
-    /* border-bottom: 2px solid #ffa500; */
-}
-
-
-
-.portfolio_img img{
-    /* margin-top: 40px; */
-    border: 2px solid #d2b48c;
+    color: #d2b48c;
+    padding-bottom: 30px;
+    text-align: left;
 }
 
 p {
     /* margin-top: 30px; */
     line-height: 1.5;
-    font-size: 1em;
+    padding: 0 20px 0 0; 
 }
- 
+
+
+
 
 
 /* ------Footer------ */
 
-
-footer {
-    clear: left;
+#foot-wrap {
     background-color: #ffa500;
-    border-top: 9px solid tan;
+    border-top: 9px solid #d2b48c;
     color: #fff;
     text-align: center;
     padding: 18px 0 2px 0;
-    font-size: .75em;
-    /* margin-top: 40%; */
+    height: 60px;
+    width: 100%;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 60px;
-} 
-
-/* .footer {
-    position: relative;
-    bottom: 0;
-    height: 60px;
-    width: 100%;
-    padding-top:20px;
-    background-color: #214761;
-    color: #FFFFFF;
-  } */
+}
 
 
 
-/* ------Portfolio Page------ */
 
-/* .footer {
-    background-color: #f5f5f5;
-} */
-
-
-/* #sticky-footer {
-    flex-shrink: none;
-  } */
-
-/* .mt-auto, .my-auto {
-    margin-top: auto!important;
-} */ */
-
- /* .pb-3, .py-3 {
-    padding-bottom: 1rem!important;
-} */
-
-/* .pt-3, .py-3 {
-    padding-top: 1rem!important;
-} */
-
-
-
-/* ------Contact Page------ */
 
 /* ---------------------------------------------- */
 /* Form  */
@@ -210,8 +153,9 @@ footer {
 
 
 .contact-form {
-    width: 60%;
-    margin: 0 auto;
+    width: 30%;
+    margin-left: 15px;
+    /* margin: 0 auto; */
 }
 
 input[type=text],
