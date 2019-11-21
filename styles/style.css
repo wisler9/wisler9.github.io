@@ -28,6 +28,10 @@ also make sure the html and body is set to 0 margin and padding, with a height o
     height: 100%; 
 }
 
+.name {
+    
+}
+
 h1 {
     font-family: 'Times New Roman', Times, serif;
     font-family: 'Vollkorn SC', serif; 
